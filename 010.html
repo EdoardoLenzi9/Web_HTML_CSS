@@ -1,69 +1,91 @@
-<div class="container">
-    <div></div>
-    <div class="center">
-        <div><button class="icon">⬅️</button></div>
-        <div class="title">
-            <h1><strong>Molti indirizzi diverse prospettive</strong></h1>
-            <button id="discover">Scopri chi siamo</button>
-        </div>
-        <div><button class="icon">➡️</button></div>
-    </div>
-
-    <div class="bottom">
-        <button class="icon">🔵</button>
-        <button class="icon">🔵</button>
-        <button class="icon">🔵</button>
-    </div>
-<div>
-
 <style>
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-between;
-    height: 400px;
-    background-image: url("https://www.martinomartini.eu/wp-content/uploads/2022/11/Martini_Martino_Palestra_B_290523_Marco_Varrone_WEB-2-e1694170906674.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    gap: 110px;
-}
-
-.center {
-    width: 100%;
+.container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 0 10% 0 10%;
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-h1 {
-    color: white;
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+#logo{
+    width: 80px;
+}
+
+.title{
+    color: #455b71;
     font-family: sans-serif;
-    font-size: 35px;
+    font-size: 20px;
 }
 
-#discover {
-    background-color: #1260a4;
-    color: white;
+input{
+    background-color: #d2e4ff;
     border-color: transparent;
-    height: 50px;
-    font-size: 15;
-    border-radius: 8px;
-    padding: 0 20px 0 20px;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 20px;
 }
 
-.icon {
+select{
     background-color: transparent;
     border-color: transparent;
+    height: 30px;
+    font-family: sans-serif;
     font-size: 20px;
+}
+</style>
+
+<div class="container">
+    <div class="left">
+        <img src="logo.svg" id="logo">
+        <div class="title">
+            <div>Istituto di Istruzione</div>
+            <strong>Martino Martini</strong>
+        </div>
+    </div>
+    
+    <div class="right">
+        <select>
+            <option>Scuola</option>
+            <option>Panoramica</option>
+            <option>...</option>
+            <option>Le persone</option>
+            <option>Organizzazione</option>
+        </select>
+        
+        <select>
+            <option>Servizi</option>
+            <option>...</option>
+        </select>
+        
+        <select>
+            <option>Novita'</option>
+            <option>...</option>
+        </select>
+        
+        <select>
+            <option>Didattica</option>
+            <option>...</option>
+        </select>
+        
+        <search>
+            <input placeholder="🔍"></input>
+        </search>
+    </div>
+</div>
+
+<style>
+#logo{
+    size: 10px;
 }
 </style>
