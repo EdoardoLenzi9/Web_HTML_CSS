@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>Martino Martini</title>
+        <!-- TOP STYLE -->
+        <style>
+            .top {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10% 0 10%;
+            }
+
+            .top-left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .top-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-family: sans-serif;
+            }
+
+            #logo{
+                width: 80px;
+            }
+
+            .title{
+                color: #455b71;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+
+            input{
+                background-color: #d2e4ff;
+                border-color: transparent;
+                border-radius: 20px;
+                height: 30px;
+                font-size: 20px;
+            }
+
+            select{
+                background-color: transparent;
+                border-color: transparent;
+                height: 30px;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+        </style>
+
+        <!-- MID STYLE -->
+        <style>
+            .mid{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                align-content: space-between;
+                height: 400px;
+                background-image: url("https://www.martinomartini.eu/wp-content/uploads/2022/11/Martini_Martino_Palestra_B_290523_Marco_Varrone_WEB-2-e1694170906674.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                gap: 110px;
+            }
+
+            .mid-center {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #mid-title {
+                color: white;
+                font-family: sans-serif;
+                font-size: 35px;
+            }
+
+            #mid-button {
+                background-color: #1260a4;
+                color: white;
+                border-color: transparent;
+                height: 50px;
+                font-size: 15;
+                border-radius: 8px;
+                padding: 0 20px 0 20px;
+            }
+        </style>
+
+        <!-- BOTTOM STYLE -->
+        <style>
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 0 2% 0 2%;
+            }
+
+            .bottom-left {
+                width: 40vw;
+            }
+
+            .bottom-right {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 40vw;
+            }
+
+            h2 {
+                color: #1260a4;
+                font-family: sans-serif;
+                font-size: 40px;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                font-family: sans-serif;
+                font-size: 18px;
+                padding: 0;
+                margin: 10px 0 0 0;
+                line-height: 25px;
+            }
+
+            .bottom-button {
+                background-color: #1260a4;
+                color: white;
+                border-color: transparent;
+                height: 50px;
+                font-size: 20;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 0 20px 0 20px;
+            }
+
+            .white {
+                background-color: white;
+                color: #1260a4;
+                border-color: #1260a4;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- TOP -->
+        <div class="top">
+            <div class="top-left">
+                <img src="https://www.martinomartini.eu/wp-content/themes/design-scuole-wordpress-theme/assets/images_martini/logo-custom.png" id="logo">
+                <div class="title">
+                    <div>Istituto di Istruzione</div>
+                    <strong>Martino Martini</strong>
+                </div>
+            </div>
+            
+            <div class="top-right">
+                <select>
+                    <option>Scuola</option>
+                    <option>Panoramica</option>
+                    <option>...</option>
+                    <option>Le persone</option>
+                    <option>Organizzazione</option>
+                </select>
+                
+                <search>
+                    <input placeholder="🔍"></input>
+                </search>
+            </div>
+        </div>
+
+        <br/>
+
+        <!-- MID -->
+        <div class="mid">
+            <div></div>
+            <div class="mid-center">
+                <h1 id="mid-title">Molti indirizzi diverse prospettive</h1>
+                <button id="mid-button">Scopri chi siamo</button>
+            </div>
+            <div></div>
+        </div>
+
+        <br/>
+
+        <!-- BOTTOM -->
+        <div class="bottom">
+            <div class="bottom-left">
+                <h2>Il nostro istituto</h2>
+                <p>
+                    L'istituto Martino Martini è una scuola secondaria di 2° grado situata a Mezzolombardo, 
+                    facilmente raggiungibile con i mezzi. Nell'istituto sono presenti <b>9 indirizzi, 5 liceali e 4 tecnici</b>. 
+                    Gli indirizzi liceali sono: lo scientifico opzione <b>scienze applicate</b>, 
+                    lo scientifico <b>sportivo</b>, lo scientifico internazionale <b>quadriennale</b>, 
+                    il liceo delle <b>scienze umane</b> opzione socio-economica e il liceo del 
+                    <b>Made in Italy</b>.
+                </p>
+            </div>
+            <div class="bottom-right">
+                <h2>Utilità</h2>
+                <button class="bottom-button">Registri</button>
+                <button class="bottom-button white">Pagamenti</button>
+                <button class="bottom-button white">...</button>
+                <button class="bottom-button white">Permessi uscita</button>
+            </div>
+        </div>
+    </body>
+</html>
